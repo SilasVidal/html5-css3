@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entendendo as pseudo classes-aula02</title>
+  <style>
+    body {
+      margin-top: 100px;
+    }
+    .movies {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   
+    }
+    .movies div {
+      color: #164;
+      border-bottom: 1px solid #d2d0d098;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+    .movies :nth-child(4n) {
+      background-color: rgba(128, 120, 119, 0.549)
+    }
+  </style>
+</head>
+<body>
+  <div class="movies">
+    <div>The Walking Death</div>
+    <a href="">Link 1</a>
+    <div>Peaky blinders</div>
+    <a href="">Link 2</a>
+    <div>Todo Mundo Odeia o Chris</div>
+    <a href="">Link 3</a>
+    <div>Round Six</div>
+    <a href="">Link 4</a>
+    <div>Chaves</div>
+    <a href="">Link 5</a>
+    <div>Homem-aranha</div>
+    <a href="">Link 6</a>
+
+  </div>
+</body>
+</html>

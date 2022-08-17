@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entendendo as pseudo classes-aula04</title>
+  <style>
+    body {
+      margin-top: 100px;
+    }
+    .my-div {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      margin-bottom: 50px;;
+    }
+    .my-div::before {
+      content: "''";
+      font-size: 25px;
+      color: red;
+    }
+    .my-div::after {
+      content: "after";
+      color: green;
+    }
+    .breadcrumbs {
+      font-size: 14px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .breadcrumbs li {
+      display: inline;
+    }
+    .breadcrumbs li::after{
+      content: ">";
+      padding: 0 5px 0 7px;
+    }
+    .breadcrumbs li:last-child::after {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="my-div">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate numquam molestias distinctio corrupti ipsa ipsam voluptatem perspiciatis ab. Mollitia labore placeat reprehenderit sed eius molestias sint perferendis et beatae consequatur.
+  </div>
+  <ul class="breadcrumbs">
+    <li>Home</li>
+    <li>Produtos</li>
+    <li>Playstation 4</li>
+  </ul>
+</body>
+</html>

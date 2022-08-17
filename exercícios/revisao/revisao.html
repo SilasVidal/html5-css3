@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Revisão</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="revisao">
+      <h1>Revisão</h1>
+      <h2>Hierarquia de títulos</h2>
+      <p class="leftSpacing">
+        Para o título principal de um site, deve ser usado o
+        &lt;h1&gt;&lt;/h1&gt;,<br />já a h2 é subtítulo do h1,e o h3 é subtítulo
+        do h2, e assim suscessivamente.
+      </p>
+      <h2>Semântica</h2>
+      <q>Semântica é o significado dos vocábulos,por oposição à sua forma.</q>
+      <p>No HTML5 algumas tags passaram a ser obsoletas,como:</p>
+      <p>&lt;b&gt;, &lt;u&gt;, &lt;blink&gt;, etc.</p>
+      <p class="leftSpacing">
+        Essas eram tags que não tinham um sentido,seus únicos propósitos eram
+        alterar o estilo,<br />
+        mais no HTML5 as css são as reponsáveis pelo estilo, logo qualquer
+        alteração no estilo deve ser feita nas css.
+      </p>
+      <h2>Trechos de código</h2>
+      <p class="leftSpacing">
+        Para compartilhar um código em outra linguagem,usamos a tag
+        &lt;code&gt;.
+      </p>
+      <p>
+        Usando esta tag as letras ficam no modo monospace, o que facilita
+        bastante a leitura do código.
+      </p>
+      <h2>Texto pré-formatado</h2>
+      <p class="leftSpacing">
+        A tag &lt;pre&gt; mantém o texto pré-formatado,<br />exatamente da mesma
+        forma que foi digitado(inclusive espaços)
+      </p>
+      <div id="textoFormatado">
+        <p id="exemplo" title="clique aqui"><strong>Exemplo:</strong>
+        <pre id="textPre">
+          Este     texto está dentro de     uma
+          tag     &lt;pre&gt;  a forma como ele   está
+          é    uma prova        disso 🤣.
+        </pre>
+        </p>
+      </div>
+      <h2>Citações</h2>
+      <p class="leftSpacing">Para uma citação simples usamos a tag &lt;q&gt;</p>
+      <p>
+        E para citações mais longas (em bloco) usamos a tag &lt;blockquote&gt;
+      </p>
+      <h2>Abreviações</h2>
+      <p class="leftSpacing">
+        Para escrever uma sigla e deixar claro p seu significado usamos a tag
+        &lt;abbr&gt; e o seu title.
+      </p>
+      <p>Exemplo:</p>
+      <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr>
+      <h2>Texto invertido</h2>
+      <bdo dir="rtl" class="leftSpacing"> Cara isso aqui não faz o menor sentido. </bdo>
+      <h2>Listas ordenadas</h2>
+      <p class="leftSpacing">
+        A HTML chama de ordered list, as listas onde a ordem é algo
+        importante.<br />Para usá-las basta pôr as tags &lt;ol&gt;&lt;/&gt;.
+      </p>
+      <p>Exemplo:</p>
+      <ol type="I" start="10">
+        <h3>Lista de exemplo</h3>
+        <li><p>Lorem</p></li>
+        <li><p>Lorem</p></li>
+        <li><p>Lorem</p></li>
+      </ol>
+      <h2>Listas não ordenadas</h2>
+      <p class="leftSpacing">
+        Unordered lists,também chamadas de listas com marcadores,<br />são
+        aquela onde a ordem não tem influência no significado da lista.<br />
+        Para usá-las basta pôr as tags &lt;ul&gt;&lt;/ul&gt;.
+      </p>
+      <p>Exemplo:</p>
+      <ul type="square">
+        <h3>Lista de exemplo</h3>
+        <li><p>Lorem</p></li>
+        <li><p>Lorem</p></li>
+        <li><p>Lorem</p></li>
+      </ul>
+      <h2>Lista de definições</h2>
+      <p class="leftSpacing">
+        Toda lista de definições está dentro de uma tag &lt;<abbr
+          title="Definition list"
+          >dl</abbr
+        >&gt;.<br />
+        cada termo é um &lt;<abbr title="Definition term">dt</abbr>&gt;,<br />
+        e cada descriçãos é um &lt;<abbr title="Definition description">dd</abbr
+        >&gt;.
+      </p>
+      <h2>Âncoras</h2>
+      <p class="leftSpacing">Para criar um link usa-se a tag &lt;a&gt;</p>
+      <ol>
+        <h3>Parâmetros da tag a:</h3>
+        <li>
+          <h4>Href</h4>
+          <p>É onde colocamos o endereço do link</p>
+        </li>
+        <li>
+          <h4>Target</h4>
+          <p>É onde indicamos onde o link vai ser aberto</p>
+          <ul type="disc">
+            <h4 style="font-size: 1.1em;">Tipos de target:</h4>
+            <li><abbr title="Abre o link em outra página">_blank</abbr></li>
+            <li><abbr title="Abre o link na janela atual">_self</abbr></li>
+          </ul>
+        </li>
+        <li>
+          <h4>Self</h4>
+          <p>Diz qual a categoria do arquivo.</p>
+          <ul type="disc">
+            <h4>Tipos de rel:</h4>
+            <li>
+              <abbr
+                title="Indica que o link é para a próxima parte do documento atual"
+                >next</abbr
+              >
+            </li>
+            <li>
+              <abbr
+                title="Indica que é um link para o site do autor do artigo atual"
+                >prev</abbr
+              >
+            </li>
+            <li>
+              <abbr
+                title="Indica que é um link para outro site que não faz parte do site atual"
+                >external</abbr
+              >
+            </li>
+            <li>
+              <abbr
+                title="Indica que é um link para um site não endossado, como um link pagp"
+                >notfollow</abbr
+              >
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <h2>Áudios</h2>
+      <p class="leftSpacing">A tag &lt;audio&gt; serve para inserir um áudio no site.</p>
+      <audio preload="auto" controls loop>
+        <source
+          src="midia/audios/King Porter Stomp - Joel Cummins.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <h2>Vídeos</h2>
+      <p class="leftSpacing">
+        Para inserir um vídeo em um site utilizamos a tag &lt;<abbr
+          title="Caso o arquivo esteja hospedado no nosso próprio servidor"
+          >video</abbr
+        >&gt;
+      </p>
+      <video width="560px" poster="midia/imagens/poster.png" controls >
+        <source
+          src="midia/videos/pexels-mikhail-nilov-7677379.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="midia/videos/Pexels-Mikhail-Nilov-7677379.webm"
+          type="video/webm"
+          />
+        </video>
+      <h2>Imagens-flexíveis</h2>
+      <p class="leftSpacing">É possivel adaptar as imagens para diferentes tamanhos de tela.</p>
+      <picture>
+        <source
+          media="(max-width:
+          750px)"
+          srcset="midia/imagens/urso-pequeno.png"
+          type="image/png"
+        />
+        <source
+          media="(max-width:
+          1050px)"
+          srcset="midia/imagens/urso-medio.png"
+          type="image/png"
+          />
+          <img src="midia/imagens/urso-grande.png" alt="Fotografía de um urso" />
+        </picture>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando o hover</title>
+  </head>
+  <style>
+    body {
+      background-color: rgba(92, 147, 92, 0.73); 
+      font: normal 1em Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      color:rgba(4, 115, 4, 0.913);
+      font-size: 3em;
+    }
+
+    p {
+      color:rgb(23, 123, 78);
+      font-size: 1.5em;
+    }
+
+    ul > li > ul {
+      display: none;
+    }
+
+   ul > li:hover > h1 {
+    color: rgba(30, 140, 30, 0.494);
+    text-shadow: 10px 5px 10px rgba(30, 140, 30, 0.291);
+   }
+
+    ul > li:hover ul {
+      display: block;
+      color:rgba(4, 115, 4, 0.913);
+    }
+
+    ul > li > ul > li > p:hover {
+      color: rgba(4, 115, 4, 0.645);
+    }
+
+    a {
+      background-color: rgba(42, 81, 42, 0.396);
+      color: rgba(7, 19, 69, 0.949);
+      text-decoration-color: green;
+    }
+
+    a:hover {
+      background-color: rgba(7, 19, 69, 0.949);
+      color:rgb(0, 255, 0);
+      text-shadow: 10px 10px 20px rgba(2, 174, 2, 0.574);
+    }
+
+    a:visited {
+      color: rgba(7, 19, 69, 0.949);
+      background-color: rgb(0, 255, 0);
+    }
+  </style>
+  <body>
+    <ul type="none">
+      <li>
+        <h1>Esportes</h1>
+        <ul type="none">
+          <li><p>Futebol</p></li>
+          <li><p>Basquete</p></li>
+          <li><p>Vôlei</p></li>
+        </ul>
+      </li>
+      <li>
+        <h1>Seleções</h1>
+        <ul type="none">
+          <li><p>Brasil</p></li>
+          <li><p>Espanha</p></li>
+          <li><p>Argentina</p></li>
+        </ul>
+      </li>
+      <li>
+        <h1>Jogadores</h1>
+        <ul type="none">
+          <li><p>Neymar</p></li>
+          <li><p>Sérgio Ramos</p></li>
+          <li><p>Messi</p></li>
+        </ul>
+      </li>
+    </ul>
+    <p><a href="https://ge.globo.com/" target="_blank" rel="external">Mais imformações sobres os esportes</a></p>
+  </body>
+</html>
